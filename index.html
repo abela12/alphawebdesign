@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <!-- Font Awesome Icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Doro Mart</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-base py-4 fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-between align-items-center order-lg-0"
+          href="index.html"
+        >
+          <img src="assets/images/logo/DM_web.logo.png" class="logo" alt="site icon" />
+        </a>
+
+        <div class="order-lg-2 nav-btns">
+          <button type="button" class="btn position-relative">
+            <i class="fa fa-shopping-cart"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge bg-primary"
+              >5</span
+            >
+          </button>
+        </div>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#header"
+                >home</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#collection"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#special"
+                >Product</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#blogs"
+                >About</a
+              >
+            </li>
+            <li class="nav-item px-2 py-2">
+              <a class="nav-link text-uppercase text-dark" href="#about"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!--  Showcase -->
+    <section id="showcase">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner/3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>100% Cooked <br> With Love!</h5>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner/2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>100% Cooked <br> With Love!</h5>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/images/banner/1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>100% Cooked <br> With Love!</h5>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- End  Showcase -->
+
+    <!-- Product List -->
+    <section id="product" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">New Product</h2>
+        </div>
+
+        <div class="row g-0">
+          <div
+            class="d-flex flex-wrap justify-content-center mt-5 filter-group"
+          >
+            <button
+              type="button"
+              class="btn m-2 text-dark active-filter-btn"
+              data-filter="*"
+            >
+              All
+            </button>
+            <button type="button" class="btn m-2 text-dark current-filter" data-filter=".best">
+              Breakfast
+            </button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".feat">
+             Lunch
+            </button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".new">
+             Dinner
+            </button>
+          </div>
+
+          <div class="product-list mt-4 row gx-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+              <div class="product-img">
+                <img src="assets/images/product/doro.png" class="w-100" />
+                <span
+                  class="text-white d-flex align-items-center justify-content-center circle"
+                  >sale</span
+                >
+                <div class="content">
+                  የምግብ ዝግጅት | Catering Service
+                </div>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize my-1">Mulu Doro Wet</p>
+                <span class="fw-bold">4550.50</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+              <div class="product-img">
+                <img src="assets/images/product/maberawi.png" class="w-100" />
+                <span
+                  class="text-white d-flex align-items-center justify-content-center circle"
+                  >sale</span
+                >
+                <div class="content">
+                  የምግብ ዝግጅት | Catering Service
+                </div>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize my-1">Mulu Agelegel</p>
+                <span class="fw-bold">450.50</span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+              <div class="product-img">
+                <img src="assets/images/product/kitfo.png" class="w-100" />
+                <span
+                  class="text-white d-flex align-items-center justify-content-center circle"
+                  >out</span
+                >
+                <div class="content">
+                  የምግብ ዝግጅት | Catering Service
+                </div>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize my-1">Kitfo</p>
+                <span class="fw-bold">945.50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Product List -->
+
+    <!-- Call to Action -->
+    <!-- End Call to Action -->
+
+    <!-- Footer -->
+    <!-- Footer -->
+
+    <!-- jquery Script -->
+    <script src="assets/vendor/jquery/jquery-3.6.0.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Isotope -->
+    <script src="assets/vendor/isotope/isotope.pkgd.js"></script>
+    <!-- Main Script -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
