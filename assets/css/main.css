@@ -1,0 +1,236 @@
+/*--------------------------------------------------------------
+# Common
+--------------------------------------------------------------*/
+:root {
+  --main-font: "Manrope", sans-serif;
+  --main-gray: #6f7775;
+  --main-gray-rgb: 111, 119, 117;
+  --main-gray-light: #f1f1f1;
+  --main-white: #ffffff;
+  --main-white-rgb: 255, 255, 255, 0;
+  --main-base: #00715d;
+  --main-black: #283734;
+  --main-primary: #C68E11;
+  --main-primary-rgb: 251, 212, 90;
+}
+.bg-base {
+    background-color: #DFD8D8;
+}
+
+.pt-130 {
+  padding-top: 130px !important;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.ml-30{
+  margin-left: 30px;
+}
+.mb-30{
+  margin-bottom: 30px;
+}
+p-40{
+  padding: 40px;
+}
+.cart-totals.ml-30 {
+  margin-left: 0 !important;
+  text-align: center;
+}
+.order_table table .w-160 {
+  margin: 0 auto;
+}
+.text-heading {
+  color: #253D4E;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group input {
+  background: #fff;
+  border: 1px solid #ececec;
+  height: 64px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.form-group input:focus {
+  background: transparent;
+  border-color: #BCE3C9;
+}
+
+textarea {
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  height: 50px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 10px 10px 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  min-height: 200px;
+}
+
+textarea:focus {
+  background: transparent;
+  border: 1px solid #BCE3C9;
+}
+.payment_option .custom-radio {
+  margin-bottom: 10px;
+}
+table .product-thumbnail img {
+  max-width: 80px;
+}
+.order_table table .product-thumbnail img {
+  max-width: 120px;
+  border-radius: 15px;
+  border: 1px solid #ececec;
+  padding: 5px;
+}
+.order_table table .w-160 {
+  max-width: 160px;
+}
+.payment_option .custom-radio .form-check-label {
+  color: #292b2c;
+  font-weight: 600;
+}
+.navbar-brand img {
+  width: 200px;
+}
+.carousel-caption{
+    left: 0!important;    
+    right: 50%!important;
+    top: 10%!important;
+}
+.carousel-caption h5{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+
+}
+.carousel-item {
+  height: 400px;
+}
+#showcase {
+  padding-top: 112px;
+}
+#showcase img {
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  filter: brightness(60%);
+}
+/* Product List */
+.product-img {
+  position: relative;
+  background-color: var(--main-gray-light);
+  transition: 0.4s ease-in-out;
+}
+.product-img:hover img {
+  transform: scale(1.1);
+}
+.product-list .circle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--main-primary);
+}
+.current-filter {
+  background-color: var(--main-primary);
+  color: #fff;
+  border-color: var(--main-primary);
+}
+.filter-group .btn:hover {
+  color: #fff;
+}
+.content {
+  position: absolute;
+  transition: 0.5s;
+  top: 80%;
+  left: 5%;
+  opacity: 1;
+  z-index: 1;
+  border-bottom-right-radius: 10px;
+  width: 89%;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(var(--main-white-rgb)),
+    rgba(var(--main-primary-rgb))
+  );
+}
+/* Product Detail */
+#product-detail{
+    padding-top: 100px;
+}
+.thumbnail img{
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.thumbnail img:hover{
+    transform: scale(1.1);
+}
+.thumbnail{
+    border: #00715d 1px solid;
+}
+
+.dashboard-menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-menu ul li {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+}
+
+.dashboard-menu ul li a {
+  font-size: 16px;
+  color: #7E7E7E;
+  padding: 15px 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+
+.dashboard-menu ul li a i {
+  color: #7E7E7E;
+  font-size: 19px;
+  opacity: 0.6;
+}
+
+.dashboard-menu ul li a.active {
+  color: #fff;
+  background-color: #3BB77E;
+  border-radius: 10px;
+}
+
+.dashboard-menu ul li a.active i {
+  color: #fff;
+}
+
+.dashboard-menu ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Responsive Media Query */
+@media(min-width: 992px){
+    .showcase{
+       padding-top: 100px;
+    }
+}
+@media(max-width: 652px){
+    .showcase{
+       padding-top: 100px;
+    }
+    .carousel-item {
+      height: 140px;
+    }
+}
